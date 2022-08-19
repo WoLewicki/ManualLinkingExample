@@ -1,0 +1,1 @@
+Example project showing how to manually link `react-native-svg` project so new architecture can be used on both platforms in `react-native` version `0.69.4`.
