@@ -3,6 +3,7 @@
 #include <CoreComponentsRegistry.h>
 #include <fbjni/fbjni.h>
 #include <react/renderer/componentregistry/ComponentDescriptorProviderRegistry.h>
+#include <react/renderer/components/rnsvg/ComponentDescriptors.h>
 #include <react/renderer/components/rncore/ComponentDescriptors.h>
 
 namespace facebook {
@@ -19,6 +20,27 @@ MainComponentsRegistry::sharedProviderRegistry() {
   //
   // providerRegistry->add(concreteComponentDescriptorProvider<
   //        AocViewerComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGCircleComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGClipPathComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGDefsComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGEllipseComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGForeignObjectComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGGroupComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGImageComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGLinearGradientComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGLineComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGMarkerComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGMaskComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGPathComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGPatternComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGRadialGradientComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGRectComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGSvgViewComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGSymbolComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTextComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTextPathComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGTSpanComponentDescriptor>());
+  providerRegistry->add(concreteComponentDescriptorProvider<RNSVGUseComponentDescriptor>());
   return providerRegistry;
 }
 
